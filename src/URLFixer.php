@@ -42,7 +42,7 @@ class URLFixer
      */
     public function fixSiteURL($url)
     {
-        if(is_main_site() || is_subdomain_install()) {
+        if (is_main_site() || is_subdomain_install()) {
             if (substr($url, -3) !== '/wp') {
                 $url .= '/wp';
             }
